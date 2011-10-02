@@ -1,0 +1,16 @@
+[user]
+	name = Michael Dumont
+	email = michael.d.dumont@gmail.com
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+	ui = auto
+[core]
+	pager = less
+	editor = vim
+[merge]
+	tool = vimdiff
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

@@ -1,0 +1,127 @@
+# schu's .xtrekrc
+#
+# Specify this file with:
+
+
+#   netrek -r defaults
+#
+# If you do not specify a file, then .xtrekrc from your home directory
+#   is used (if it exists).
+#
+
+#metaDefault: on
+server:                 whitestar.cs.rit.edu
+port:                  2592
+
+name: 			Dumont
+
+# changes to the basic colors:
+#color.white:   	white
+#color.black:  		black
+#color.red:		paleVioletRed1
+#color.green: 		green
+#color.yellow: 		yellow
+#color.cyan:            cyan
+#color.cyan:		dodgerblue
+#color.cyan:		DeepSkyBlue
+#color.light grey:   	light grey
+
+#miscellaneous toggles
+# 0=none, 1=time of day, 2=time on server, 3=time in ship, 4=user set time
+timerType:		3
+#shipBitmapPath:         /tmp_mnt/home/edison/dyessww/netrek/bitmaps/
+#shipBitmapPath:         /home/stu1/s24/jmc6182/Netrek/Bitmaps/ss
+#shipBitmapPath:         /home/stu1/s24/jmc6182/Netrek/Bitmaps/Bronco
+# put enemy on left with sorted playerlist
+robsort:		on
+#keymap
+keymap:assatTTteyyeq\\qCvvCdDDd
+# show dead players in playerlist
+showDead:		on
+# sort outfitting ('--') players to bottom
+sortOutfitting:		off
+# show pre-login players
+showPreLogins:		on
+# replace 0.00 with "     " when acceptable (paradise servers)
+hideNoKills:		on
+warpStreaks:		on
+# use rainbow dashboard in paradise
+# 0=old dashboard, 1=new dashboard, 2=color dashboard, 3=rainbow dashboard
+Dashboard:		1
+# clear my keymap each time, ie ignore the server's copy 
+clearMap:		on
+# use hull warning dots
+warnHull:		on
+# replace ?? cloaker symbol with ><
+cloakChars:		><
+showShields:		on
+#showStats:		on
+reportKills:		on
+showMySpeed:		on
+# vary color of shields with damage
+varyShields:		on
+keepPeace:		on
+galacticFrequent:       on
+showTractor:		on
+lockLine:		on
+showTractorPressor:     on
+showAllTractorPressor:	on
+showPlanetNames:	on
+showPlanetOwner:	on
+sortPlayers:	   	on
+warp:			on
+defaultShip: 		DD
+logging: 		on
+logMessage:		on
+# galactic map stuff: 0=ownership  1=resources  2=nothing
+showGalactic:    	1
+showLocal:		1
+# lock :  0=don't show 1=galactic only  2=tactical only  3=both
+showLock:		3
+netStats:  		off
+tryUDP:			on
+# udpClientSend: 0=TCP only 1=simple UDP  2=enforced UDP (state only)  
+# 3=enforced UDP (state & weap)
+udpClientSend:          3
+# udpClientReceive:  0=TCP only  1=simple UDP 2=fat UDP 3=double UDP
+udpClientReceive:       2
+udpSequenceCheck:       on
+# udpDebug: 0 = OFF   1 = ON (conect msgs only)  2 = ON (verbose output)
+udpDebug:               0
+udpUpdates:		5
+tryShort:		off
+WaitMotd.mapped: 	on
+
+italicfont:     -*-clean-medium-r-normal--10-100-75-75-c-60-*
+
+
+
+netrek.geometry:        1000x800+0+1	# The main window
+netrek_icon.geometry:   +1031+0      	# The icon
+#stats.geometry:		+512+576
+#player.geometry:        82x24+0+576	# The player list
+player.geometry:        82x24+0+550	# The player list
+player.mapped:          on
+player.parent:		netrek
+#review.geometry:        82x24+512+576	# Main message window 
+review.geometry:        82x24+500+548	# Main message window 
+review.mapped:		on
+review.parent:		netrek
+
+showPhaser:   		2
+review_phaser.mapped:   on
+review_phaser.parent:   netrek
+review_phaser.geometry: 81x3+501+500
+#review_phaser.geometry: 81x4+501+543 # pre-newdash
+
+fed.parent:		local			#fed - Fed selection window
+fed.geometry:		100x100+0+0
+rom.parent:		local			#rom - Romulan selection window
+rom.geometry:		100x100+100+0
+kli.parent:		local			#kli - Klingon selection window
+kli.geometry:		100x100+200+0
+ori.parent:		local			#ori - Orion selection window
+ori.geometry:		100x100+300+0
+quit.parent:		local			#quit
+quit.geometry:		100x100+400+0
+
