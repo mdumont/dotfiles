@@ -1,5 +1,6 @@
 ###
-# Generally created by Corry Haines (tabletcorry@gmail.com)
+# Originally borrowed from Corry Haines 
+# Modified by Michael Dumont 
 ###
 
 if [ -f /usr/local/etc/bash_completion ]; then
@@ -85,6 +86,14 @@ alias ls="ls $ls_opts"
 alias gitt="git log --graph --format=oneline --abbrev-commit --decorate"
 alias gitu="git fetch && git merge --ff-only @{u}"
 
+alias p4cl="p4clp"
+alias p4clp="p4 changes -u $USER -s pending"
+alias p4cls="p4 changes -u $USER -s submitted"
+alias p4cla="p4 changes -u $USER"
+alias p4sls="p4 changes -u $USER -s shelved"
+alias p4d="p4 change -o"
+alias p4ver="p4 fstat -T headChange ... | cut -d' ' -f3 | sort -nr | head -1"
+
 # One can never have enough history
 export HISTCONTROL=ignoreboth
 export HISTFILESIZE=100000000
@@ -98,4 +107,5 @@ export EDITOR=vim
 export SVN_EDITOR=$EDITOR
 export PAGER=less
 
+source .bashrc.lab126
 
