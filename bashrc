@@ -1,5 +1,5 @@
 ###
-# Originally borrowed from Corry Haines 
+# Originally created by Corry Haines 
 # Modified by Michael Dumont 
 ###
 
