@@ -1,4 +1,3 @@
-color darkblue
 syn on
 set background=dark
 set filetype=on
