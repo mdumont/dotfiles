@@ -3,15 +3,17 @@
 # Modified by Michael Dumont 
 ###
 
-if [ -f /usr/local/etc/bash_completion ]; then
-  # Probably using Homebrew
-  . /usr/local/etc/bash_completion
-elif [ -f /opt/local/etc/bash_completion ]; then
-  # Probably using Macports
-	. /opt/local/etc/bash_completion
-elif [ -f /etc/bash_completion ]; then
-  # Probably a normal system
-	. /etc/bash_completion
+if [ "$SHELL" == "/bin/bash" ]; then
+  if [ -f /usr/local/etc/bash_completion ]; then
+    # Probably using Homebrew
+    . /usr/local/etc/bash_completion
+  elif [ -f /opt/local/etc/bash_completion ]; then
+    # Probably using Macports
+    . /opt/local/etc/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    # Probably a normal system
+    . /etc/bash_completion
+  fi
 fi
 
 # The __git_ps1 function is really good. Only use homegrown if it is missing
