@@ -16,6 +16,7 @@ set ruler
 set previewheight=1
 set smartindent
 set showmatch
+set expandtab
 set backspace=indent,eol
 "set list
 

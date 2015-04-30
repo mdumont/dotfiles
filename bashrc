@@ -109,7 +109,8 @@ export EDITOR=vim
 export SVN_EDITOR=$EDITOR
 export PAGER=less
 
-if [ -f ~/.bashrc.lab126 ]; then
-	   source ~/.bashrc.lab126
-fi 
+export PATH=~/bin:/usr/local/bin:$PATH
 
+if [ -f ~/.bashrc.work ]; then
+	   source ~/.bashrc.work
+fi 
